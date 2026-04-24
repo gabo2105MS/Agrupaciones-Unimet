@@ -2,6 +2,7 @@
   "expo": {
     "name": "Agrupaciones Unimet",
     "slug": "agrupaciones-unimet",
+    "scheme": "agrupacionesunimet",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +26,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app accede a tus fotos para el avatar y las imágenes de grupos."
+        }
+      ]
+    ]
   }
 }
